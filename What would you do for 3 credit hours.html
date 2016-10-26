@@ -359,15 +359,25 @@ Total Score = $totalScore
 (if:$isLensScratched)[Scratched Lens]
 [[go to class]]</tw-passagedata>
 <tw-passagedata pid="30" name="go to class" tags="" position="2092,3346">PARDON MY DUST! Story under construction!
-[[fail]]
-[[pass]]
-[[pass with flying colors]]</tw-passagedata>
+
+{(if: $numPhotos &lt; 5)[
+[[Recieve your critique-&gt;fail]]
+](elseif: $totalScore &gt; 13)[
+[[Recieve your critique-&gt;pass with flying colors]]
+](else:)[
+[[Recieve your critique-&gt;pass]]
+]
+}
+
+
+
+</tw-passagedata>
 <tw-passagedata pid="31" name="fail" tags="" position="1848,3533">PARDON MY DUST! Story under construction!
-[[credits]]</tw-passagedata>
+[[The End-&gt;credits]]</tw-passagedata>
 <tw-passagedata pid="32" name="pass" tags="" position="2080,3533">PARDON MY DUST! Story under construction!
-[[credits]]</tw-passagedata>
+[[The End-&gt;credits]]</tw-passagedata>
 <tw-passagedata pid="33" name="pass with flying colors" tags="" position="2353,3533">PARDON MY DUST! Story under construction!
-[[credits]] </tw-passagedata>
+[[The End-&gt;credits]] </tw-passagedata>
 <tw-passagedata pid="34" name="credits" tags="" position="2080,3683">Thank you for playing!
 
 Designed and Written by Jessie Adkins</tw-passagedata>
