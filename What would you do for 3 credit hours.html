@@ -72,10 +72,10 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 [[You move closer to the Chiuaua-&gt;approach Chiuaua]]</tw-passagedata>
 <tw-passagedata pid="8" name="far Chiuaua pic" tags="" position="905,606">PARDON MY DUST! Story under construction!
 
+(set: $chiuaua to 2)(set: $numPhotos=$numPhotos+1) (set: $totalScore=$totalScore+2)
+
 Number of Photos: $numPhotos
 Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
-(set: $chiuaua to 2)(set: $numPhotos=$numPhotos+1) (set: $totalScore=$totalScore+2)
 
 [[You board the train]]</tw-passagedata>
 <tw-passagedata pid="9" name="approach Chiuaua" tags="" position="1108,606">PARDON MY DUST! Story under construction!
@@ -96,10 +96,10 @@ you get no chiuaua photo
 [[You board the train]]</tw-passagedata>
 <tw-passagedata pid="11" name="no ask Chiuaua pic" tags="" position="1310,760">PARDON MY DUST! Story under construction!
 
+(set: $chiuaua to 2)(set: $numPhotos=$numPhotos+1)(set: $totoalScore=$totoalScore+4)
+
 Number of Photos: $numPhotos
 Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
-(set: $chiuaua to 2)(set: $numPhotos=$numPhotos+1)(set: $totoalScore=$totoalScore+4)
 
 [[You board the train]]</tw-passagedata>
 <tw-passagedata pid="12" name="You board the train" tags="" position="1110,903">PARDON MY DUST! Story under construction!
@@ -151,10 +151,11 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 [[You ask the owner if you may take a photo of their teacup pig-&gt;ask pig pic]]</tw-passagedata>
 <tw-passagedata pid="17" name="ask pig pic" tags="" position="505,758">PARDON MY DUST! Story under construction!
 
+(set: $pig to 2)(set: $numPhotos=$numPhotos+1)(set: $totalScore=$totalScore+4)
+
 Number of Photos: $numPhotos
 Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
-(set: $pig to 2)(set: $numPhotos=$numPhotos+1)(set: $totalScore=$totalScore+4)
+
 [[downtown]]</tw-passagedata>
 <tw-passagedata pid="18" name="go to pier" tags="" position="645,1138">PARDON MY DUST! Story under construction!
 
@@ -185,15 +186,19 @@ description about how there is nothing important left here
 ](elseif: $swan &gt; 0)[
 stuff
 [[go to clump of trees]]
+
 [[downtown]]
 ](elseif: $racoon &gt; 0)[
 stuff
 [[go to pond]]
+
 [[downtown]]
 ](else:)[
 intro passage
 [[go to clump of trees]]
+
 [[go to pond]]
+
 [[downtown]]
 ]}
 
@@ -238,9 +243,6 @@ Swan starts chasing you
 </tw-passagedata>
 <tw-passagedata pid="24" name="get duck photo" tags="" position="2888,868">PARDON MY DUST! Story under construction!
 
-Number of Photos: $numPhotos
-Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
 (set: $duck to 2)(set: $numPhotos=$numPhotos+1)
 (if: $isLensScratched is true)[
 (set: $totalScore=$totalScore+2)
@@ -250,13 +252,13 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 (set: $totalScore=$totalScore+4)
 ]
 
+Number of Photos: $numPhotos
+Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
+
 [[get swan photo]]
 [[run from swan]]</tw-passagedata>
 <tw-passagedata pid="25" name="get swan photo" tags="" position="3044,1084">PARDON MY DUST! Story under construction!
 
-Number of Photos: $numPhotos
-Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
 (set: $swan to 2)(set: $numPhotos=$numPhotos+1)
 (if: $isLensScratched or $usingIphone)[
 (set: $totalScore=$totalScore+1)
@@ -264,6 +266,10 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 (set: $totalScore=$totalScore+2)
 ]
 (set: $isLensScratched to true)
+
+Number of Photos: $numPhotos
+Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
+
 
 swan attacks you. you get the photo, but the swan scratches your camera lens. all future photos with this camera have the same artistic value as the iphone photos (1 point each)
 
@@ -339,10 +345,12 @@ List of animals:
 </tw-passagedata>
 <tw-passagedata pid="28" name="take selfie with swan" tags="" position="3220,1268">PARDON MY DUST! Story under construction!
 
+(set: $swan to 2) (set: $numPhotos=$numPhotos+1) (set: $totalScore=$totalScore+2)
+
 Number of Photos: $numPhotos
 Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
  
-(set: $swan to 2) (set: $numPhotos=$numPhotos+1) (set: $totalScore=$totalScore+2)
+
 [[go to park]]</tw-passagedata>
 <tw-passagedata pid="29" name="go home" tags="" position="2092,3196">PARDON MY DUST! Story under construction!
 Num Photos = $numPhotos
@@ -377,9 +385,6 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 [[take the service dog picture]]</tw-passagedata>
 <tw-passagedata pid="37" name="take the service dog picture" tags="" position="1232,1754">PARDON MY DUST! Story under construction!
 
-Number of Photos: $numPhotos
-Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
 (set: $serviceDog to 2)(set: $numPhotos=$numPhotos+1)
 (if: $isLensScratched is true)[
 (set: $totalScore=$totalScore+2)
@@ -388,6 +393,9 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 ](else:)[
 (set: $totalScore=$totalScore+4)
 ]
+
+Number of Photos: $numPhotos
+Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
 
 [[go home]]</tw-passagedata>
 <tw-passagedata pid="38" name="walk towards sea lions" tags="" position="645,1288">PARDON MY DUST! Story under construction!
@@ -398,9 +406,6 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 [[stay where you are]]
 [[lean over edge of pier]]</tw-passagedata>
 <tw-passagedata pid="39" name="stay where you are" tags="" position="645,1438">PARDON MY DUST! Story under construction!
-
-Number of Photos: $numPhotos
-Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
  
 (set: $seaLion to 2)(set: $numPhotos=$numPhotos+1)
 (if: $isLensScratched is true)[
@@ -409,7 +414,12 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 (set: $totalScore=$totalScore+1)
 ](else:)[
 (set: $totalScore=$totalScore+2)
-]</tw-passagedata>
+]
+
+Number of Photos: $numPhotos
+Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
+
+[[downtown]] </tw-passagedata>
 <tw-passagedata pid="40" name="lean over edge of pier" tags="" position="795,1438">PARDON MY DUST! Story under construction!
 
 Number of Photos: $numPhotos
@@ -419,9 +429,6 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 [[lean more]]</tw-passagedata>
 <tw-passagedata pid="41" name="take photo" tags="" position="795,1588">PARDON MY DUST! Story under construction!
 
-Number of Photos: $numPhotos
-Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
 (set: $seaLion to 2)(set: $numPhotos=$numPhotos+1)
 (if: $isLensScratched is true)[
 (set: $totalScore=$totalScore+2)
@@ -431,21 +438,27 @@ Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with sc
 (set: $totalScore=$totalScore+4)
 ]
 
+Number of Photos: $numPhotos
+Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
+
 [[downtown]] </tw-passagedata>
 <tw-passagedata pid="42" name="lean more" tags="" position="945,1588">PARDON MY DUST! Story under construction!
 
 Number of Photos: $numPhotos
 Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
- 
 (set: $usingIphone to true)
 (set: $numPhotos to 0)
 (set: $totalScore to 0)
+
+You are wobbly on your feet and feel yourself begin to slip...
 
 [[Fall into the bay]] </tw-passagedata>
 <tw-passagedata pid="43" name="Fall into the bay" tags="" position="946.6666666666667,1748.3333333333335">PARDON MY DUST! Story under construction!
 
 Number of Photos: $numPhotos
 Equipment: (if:$usingIphone)[iPhone](if:$isLensScratched)[Digital camera with scratched lens](else:)[Digital Camera]
+
+You have fallen into the bay. You have lost all of your photos, and must now use your iPhone (which was conveniently in a water proof case) to take the remaining photos you need for this class.
 
 [[downtown]] </tw-passagedata>
 <tw-passagedata pid="44" name="give racoon candy" tags="" position="2380,1646.6666666666667">PARDON MY DUST! Story under construction!
